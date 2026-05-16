@@ -1,10 +1,10 @@
-# ── IMPORTS ──────────────────────────────────────────────
+# KMeans
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 df = pd.read_csv("Purchases - Sheet1.csv")
-# ── STEP 1: BUILD CUSTOMER SUMMARY ───────────────────────
+#  STEP 1: BUILD CUSTOMER SUMMARY 
 # For each customer, calculate 3 things:
 # - total money spent
 # - how many orders they placed
@@ -17,7 +17,7 @@ customer_df = df.groupby('Names').agg(
 print("Customer Summary :- ")
 print(customer_df.head(15))
 print(f"\nTotal customers: {len(customer_df)}")
-# ── STEP 2: SCALE THE DATA ───────────────────────────────
+#  STEP 2: SCALE THE DATA 
 # K-Means uses distance to group customers.
 # If total_revenue is in thousands and total_orders is 1-6,
 # revenue will dominate just because its numbers are bigger.
@@ -29,7 +29,7 @@ scaler = StandardScaler()
 scaled_features = scaler.fit_transform(features)
 
 print("Scaling done. Shape:", scaled_features.shape)
-# ── STEP 3: RUN K-MEANS ──────────────────────────────────
+# STEP 3: RUN K-MEANS ─────────────────────────────────
 # We're asking K-Means to find 3 groups:
 # n_clusters=3 → find 3 groups
 # random_state=42 → fixes the randomness so you get same result every time you run
@@ -47,7 +47,7 @@ print(customer_df.head(10))
 
 print("\nHow many customers in each cluster:")
 print(customer_df['Cluster'].value_counts())
-# ── STEP 4: NAME THE CLUSTERS ────────────────────────────
+# STEP 4: NAME THE CLUSTERS 
 print("\nAverage stats per cluster:")
 print(customer_df.groupby('Cluster')[['total_revenue', 'total_orders', 'avg_order_value']].mean().round(0))
 
@@ -60,7 +60,7 @@ print(customer_df[customer_df['Cluster'] == 1][['Names', 'total_revenue', 'total
 print("\nCustomers in Cluster 2")
 print(customer_df[customer_df['Cluster'] == 2][['Names', 'total_revenue', 'total_orders']])
 
-# ── STEP 5: VISUALIZE THE CLUSTERS ───────────────────────
+# STEP 5: VISUALIZE THE CLUSTERS 
 plt.figure(figsize=(10, 6))
 
 colors = ['blue', 'green', 'red']

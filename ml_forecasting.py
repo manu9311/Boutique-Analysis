@@ -1,14 +1,14 @@
-# ── IMPORTS ──────────────────────────────────────────────
+# IMPORTS 
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
 
-# ── LOAD DATA ────────────────────────────────────────────
+# LOAD DATA
 df = pd.read_csv('Purchases - Sheet1.csv')
 
-# ── STEP 1: BUILD MONTHLY REVENUE ────────────────────────
+# STEP 1: BUILD MONTHLY REVENUE
 # Convert Date column to proper datetime format
 df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
 
@@ -24,7 +24,7 @@ monthly_df['MonthNumber'] = range(1, len(monthly_df) + 1)
 
 print("Monthly revenue data:")
 print(monthly_df)
-# ── STEP 2: TRAIN REGRESSION ON TIME ─────────────────────
+# STEP 2: TRAIN REGRESSION ON TIME
 # X = month number (1, 2, 3...)
 # y = revenue that month
 X = monthly_df[['MonthNumber']]
@@ -34,7 +34,7 @@ y = monthly_df['Revenue']
 model = LinearRegression()
 model.fit(X, y)
 
-# ── STEP 3: PREDICT NEXT 3 MONTHS ────────────────────────
+# STEP 3: PREDICT NEXT 3 MONTHS
 # We have months 1-15, so predict 16, 17, 18
 future_months = pd.DataFrame({'MonthNumber': [16, 17, 18]})
 future_predictions = model.predict(future_months)
@@ -53,7 +53,7 @@ print(f"MAE: ₹{mean_absolute_error(y, y_pred):,.0f}")
 # For forecasting, we're not testing accuracy on past data. We're predicting future months that don't exist yet in our data — June, July, August 2026. There's no "correct answer" to compare against.
 # So there's nothing to hide. We give the model all 15 months so it learns the best possible trend, then ask it to predict beyond month 15.
 # More data it learns from → better the forecast.
-# ── STEP 4: VISUALIZE FORECAST ───────────────────────────
+# STEP 4: VISUALIZE FORECAST
 plt.figure(figsize=(12, 6))
 
 # Plot actual revenue

@@ -1,4 +1,4 @@
-# ── IMPORTS ──────────────────────────────────────────────
+# KNN
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
@@ -6,10 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 
-# ── LOAD DATA ────────────────────────────────────────────
+
 df = pd.read_csv('Purchases - Sheet1.csv')
 
-# ── STEP 1: BUILD PRODUCT SUMMARY ────────────────────────
+# STEP 1: BUILD PRODUCT SUMMARY 
 # For each category calculate total units sold, revenue, orders
 product_df = df.groupby('Category').agg(
     total_units=('Quantity', 'sum'),
@@ -19,9 +19,9 @@ product_df = df.groupby('Category').agg(
 
 print("Product summary:")
 print(product_df)
-# ── STEP 2: LABEL THE CATEGORIES ─────────────────────────
+#  STEP 2: LABEL THE CATEGORIES 
 # KNN is supervised — it needs labels to learn from
-# We define the labels manually based on total units sold
+# I am defining the labels manually based on total units sold
 
 def label_velocity(units):
     if units >= 50:
@@ -35,7 +35,7 @@ product_df['Velocity'] = product_df['total_units'].apply(label_velocity)
 
 print("\nCategories with velocity labels:")
 print(product_df[['Category', 'total_units', 'Velocity']])
-# ── STEP 3: PREPARE DATA FOR KNN ─────────────────────────
+# STEP 3: PREPARE DATA FOR KNN
 # X = the input features KNN will learn from
 # y = the correct answers (labels) KNN will learn to predict
 
@@ -52,7 +52,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"Training samples: {len(X_train)}")
 print(f"Testing samples: {len(X_test)}")
 
-# ── STEP 4: TRAIN AND TEST KNN ───────────────────────────
+# STEP 4: TRAIN AND TEST KNN 
 # Scale the data first (same reason as K-Means — fair distances)
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
