@@ -1,0 +1,300 @@
+Date,Customer ID,Names,Category,Fabric,Stiching,Quantity,Selling Price,Cost Price,Profit
+14/07/2024,C001,Rajesh,Suits,Cotton,Stiched,1,1350,1050,300
+14/07/2024,C002,Shivani,Suits,Cotton,Unstiched,3,6800,5800,1000
+14/07/2024,C003,Chitra,Suits,Khaki,Stiched,1,1099,800,299
+14/07/2024,C004,Pushpa,Cord Sets,Cotton,Stiched,1,1290,850,440
+14/07/2024,C005,Kittu,Short Kurtis,Cotton,Stiched,1,800,600,200
+14/07/2024,C006,Leena,Suits,Cotton,Stiched,3,6900,6100,800
+14/07/2024,C006,Leena,Suits,Muslin,Unstiched,3,5800,4900,900
+14/07/2024,C006,Leena,Suits,Cotton,Stiched ,1,1800,1600,200
+14/07/2024,C007,Vatika,Short Kurtis,Cotton,Stiched ,1,550,370,180
+14/07/2024,C008,Meena,Suits,Chanderi,Stiched ,1,2900,2500,400
+14/07/2024,C008,Meena,Suits,Cotton,Unstiched,2,2190,1700,490
+14/07/2024,C008,Meena,Suits,Muslin,Stiched,1,1850,1600,250
+21/07/2024,C009,Mukesh,Suits,Cotton,Stiched,2,3975,3400,575
+28/07/2024,C010,Anu,Suits,Cotton,Stiched,1,1750,1450,300
+28/07/2024,C010,Anu,Suits,Muslin,Unstiched,1,2400,2100,300
+01/08/2024,C011,Rajesh,Suits,Chanderi,Stiched,1,1950,1750,200
+16/08/2024,C012,Madhuri,Kurtis,Cotton,Stiched,1,550,350,200
+17/08/2024,C013,Babita,Suits,Cotton,Unstiched,11,5500,3850,1650
+17/08/2024,C013,Babita,Suits,Cotton,Stiched,1,700,450,250
+18/08/2024,C014,Neelam,Suits,Muslin,Unstiched,1,1550,1300,250
+18/08/2024,C014,Neelam,Suits,Cotton,Stiched,1,2200,1800,400
+18/08/2024,C015,Neelu,Kurtis,Cotton,Unstiched,1,1050,800,250
+18/08/2024,C015,Neelu,Kurti Sets,Cotton,Stiched,1,1490,1100,390
+30/08/2024,C016,Sarvodaya Enc,Kurti,Muslin,Stiched,1,1095,750,345
+01/09/2024,C017,Kavita,Suits,Cotton,Unstiched,1,2500,2250,250
+01/09/2024,C017,Kavita,Kurti Sets,Cotton,Stiched,1,1095,895,200
+01/09/2024,C017,Kavita,Kurti Sets,Muslin,Stiched,1,2200,1850,350
+01/09/2024,C017,Kavita,Cord Sets,Cotton,Stiched,2,2640,1990,650
+01/09/2024,C017,Kavita,Short Kurtis,Chanderi,Stiched,1,890,700,190
+01/09/2024,C017,Kavita,Gowns,Cotton,Stiched,1,2845,2445,400
+01/09/2024,C018,Sengar,Suits,Cotton,Unstiched,2,1050,700,350
+05/09/2024,C019,Anju,Suits,Cotton,Unstiched,2,1200,600,600
+06/09/2024,C020,Jiya,Suits,Cotton,Unstiched,1,1095,700,395
+07/09/2024,C021,Sunita,Suits,Chanderi,Stiched,1,2000,1600,400
+07/09/2024,C022,Anjana,Kurtis,Cotton,Stiched,1,600,350,250
+08/09/2024,C023,Pinki,Suits,Cotton,Stiched,1,1550,1200,350
+08/09/2024,C023,Pinki,Suits,Muslin,Unstiched,1,2450,2000,450
+11/09/2024,C024,Parul,Gowns,Cotton,Stiched,1,1499,1199,300
+15/09/2024,C025,Chitra,Cord Sets,Muslin,Stiched,1,1350,1100,250
+15/09/2024,C026,Sarvodaya Enc,Cord Sets,Cotton,Stiched,1,1050,800,250
+15/09/2024,C026,Sarvodaya Enc,Short Kurtis,Cotton,Stiched,1,550,300,250
+16/09/2024,C027,Pinki (Adhchini),Suits,Cotton,Unstiched,3,3575,2575,1000
+18/09/2024,C028,Sarvodaya Enc,Kurtis,Muslin,Stiched,1,1450,1200,250
+20/09/2025,C027,Pinki (Adhchini),Suits,Chanderi,Unstiched,1,1750,1400,350
+20/09/2025,C028,Anjana,Suits,Cotton,Stiched,1,1200,900,300
+20/09/2024,C029,Rashmi,Short Kurtis,Cotton,Stiched,1,799,499,300
+22/09/2024,C030,Sarvodaya Enc,Short Kurtis,Cotton,Stiched,1,699,499,200
+27/09/2024,C031,Neelu,Suits,Muslin,Unstiched,1,1700,1400,300
+28/09/2024,C032,Deepika,Cord Sets,Cotton,Stiched,1,1675,1300,375
+28/09/2024,C032,Deepika,Kurtis,Cotton,Stiched,1,1675,1400,275
+28/09/2024,C033,Manju (VK),Suits,Cotton,Stiched,1,2200,1950,250
+4/10/2024,C034,Neelima,Suits,Chanderi,Unstiched,1,1400,1150,250
+4/10/2024,C035,Pinki,Suits,Chanderi,Unstiched,2,5500,4950,550
+6/10/2024,C036,Anjana,Suits,Cotton,Stiched,1,1490,1200,290
+9/10/2024,C037,Uma,Suits,Muslin,Stiched,2,3500,2900,600
+12/10/2024,C038,Nisha,Suits,Cotton,Stiched,2,4100,3400,700
+14/10/2024,C039,Maheshwari,Sarees,Cotton,Stiched,1,3000,2500,500
+14/10/2024,C040,Vijya,Suits,Chanderi,Unstiched,1,1800,1600,200
+15/10/2024,C041,Anju,Suits,Cotton,Stiched,1,1550,1200,350
+15/10/2024,C041,Anju,Suits,Cotton,Unstiched,1,975,735,240
+15/10/2024,C042,Kajal,Suits,Chanderi,Unstiched,1,1800,1550,250
+15/10/2024,C043,Sarvodaya Enc,Suits,Cotton,Stiched,1,2000,1700,300
+17/10/2024,C044,Ambika,Pants,Cotton,Stiched,2,1300,900,400
+17/10/2024,C044,Ambika,Kurtis,Cotton,Stiched,2,1400,900,500
+17/10/2024,C045,Ambika,Short Kurtis,Cotton,Stiched,1,1450,1150,300
+17/10/2024,C046,Chitra,Suits,Muslin,Stiched,1,2800,2400,400
+17/10/2024,C046,Chitra,Suits,Chanderi,Stiched,1,2500,2100,400
+19/10/2024,C047,Sangeeta,Sarees,Cotton,Stiched,1,3600,3200,400
+23/10/2024,C048,Anu,Suits,Chanderi,Stiched,1,2800,2400,400
+23/10/2024,C049,Isha,Suits,Muslin,Stiched,1,4000,3700,300
+27/10/2024,C050,Heena,Suits,Chanderi,Stiched,1,3500,3250,250
+27/10/2024,C051,Sarvodaya Enc,Suits,Cotton,Stiched,1,2100,1850,250
+27/10/2024,C052,Sarvodaya Enc,Suits,Cotton,Unstiched,1,550,350,200
+27/10/2024,C053,Sarvodaya Enc,Suits,Cotton,Stiched,1,1550,1200,350
+06/11/2024,C054,Seema Meerut,Suits,Georgette,Stiched,1,3400,3100,300
+06/11/2024,C054,Seema Meerut,Suits,Muslin,Unstiched,1,1700,1450,250
+06/11/2024,C054,Seema Meerut,Suits,Linen,Unstiched,1,1700,1450,250
+06/11/2024,C054,Seema Meerut,Fabric,Cotton,Unstiched,1,2000,1750,250
+06/11/2024,C054,Seema Meerut,Fabric,Cotton,Unstiched,1,2000,1750,250
+06/11/2024,C054,Seema Meerut,Bottoms,Cotton,Unstiched,2,1000,500,500
+06/11/2024,C054,Seema Meerut,Kurtis,Cotton,Stiched,1,900,650,250
+06/11/2024,C054,Seema Meerut,Shirts,Cotton,Stiched,1,600,350,250
+09/11/2024,C055,Sarvo,Short Kurtis,Cotton,Stiched,1,799,499,300
+07/11/2024,C056,Seema Dherna,Cord Sets,Cotton,Stiched,1,850,600,250
+07/11/2024,C056,Seema Dherna,1 Piece,Cotton,Stiched,1,900,650,250
+07/11/2024,C056,Seema Dherna,1 Piece,Cotton,Stiched,1,900,650,250
+12/11/2024,C057,Sweeti (Neelu),Suits,Muslin,Stiched,1,1800,1550,250
+12/11/2024,C057,Sweeti (Neelu),Suits,Organza,Unstiched,1,1800,1550,250
+13/11/2024,C058,Beena (Antu),Suits,Cotton,Stiched,1,900,650,250
+13/11/2024,C058,Beena (Antu),Suits,Cotton,Stiched,1,500,300,200
+15/11/2024,C059,Suman (Antu),Suits,Cotton,Stiched,1,900,650,250
+13/11/2024,C060,Geeta Sharma,Suits,Cotton,Stiched,1,1900,1650,250
+13/11/2024,C061,Sunita (Antu),Suits,Cotton,Stiched,1,1100,850,250
+13/11/2024,C062,Santosh (Antu),Suits,Silk,Stiched,1,1800,1500,300
+13/11/2024,C062,Santosh (Antu),Suits,Cotton,Stiched,1,1200,900,300
+01/12/2024,C063,Antu (Mother),Suits,Linen,Unstiched,1,1100,850,250
+01/12/2024,C063,Antu (Mother),Suits,Cotton,Stiched,1,750,400,350
+01/12/2024,C063,Antu (Mother),Suits,Organza,Stiched,1,1000,750,250
+01/12/2024,C063,Antu (Mother),Suits,Cotton,Stiched,1,1150,900,250
+02/11/2024,C064,Veena Goil,Suits,Cotton,Stiched,1,2600,2300,300
+02/11/2024,C064,Veena Goil,Suits,Cotton,Stiched,1,2000,1750,250
+14/11/2024,C065,Old Lady Sarvo,Kurtis,Cotton,Stiched,1,700,450,250
+14/11/2024,C066,Girl Adchini,Suits,Cotton,Stiched,1,2500,2250,250
+15/11/2024,C067,Parul,Suits,Cotton,Stiched,1,1900,1600,300
+15/11/2024,C067,Parul,Suits,Linen,Stiched,1,1400,1150,250
+16/11/2024,C068,Ambika Sarvodaya,Kurtis,Cotton,Stiched,2,1000,500,500
+16/11/2024,C068,Ambika Sarvodaya,2 Piece,Cotton,Stiched,1,1299,1049,250
+20/11/2024,C069,Anju,Suits,Cotton,Stiched,1,1580,1300,280
+20/11/2024,C069,Anju,Suits,Cotton,Stiched,1,1000,700,300
+20/11/2024,C070,Paruls Relative,Suits,Cotton,Stiched,1,2500,2250,250
+21/11/2024,C071,Uma Ravi,Kurtis,Cotton,Stiched,1,500,300,200
+22/11/2024,C072,Geeta Khunner,Sarees,Cotton,Stiched,1,1500,1200,300
+22/11/2024,C072,Geeta Khunner,Suits,Cotton,Stiched,2,500,200,300
+23/11/2024,C073,Dr Madhu Gupta,Kurtis,Cotton,Stiched,1,500,300,200
+23/11/2024,C073,Dr Madhu Gupta,Short Kurtis,Cotton,Stiched,2,1000,600,400
+22/11/2024,C074,Sunita Sejwal,Suits,Organza,Stiched,1,1700,1400,300
+22/11/2024,C074,Sunita Sejwal,Suits,Cotton,Stiched,1,2000,1750,250
+25/11/2024,C075,Urmil Shukla,2 Piece,Cotton,Stiched,1,1490,1240,250
+25/11/2024,C075,Urmil Shukla,Suits,Cotton,Stiched,1,1800,1550,250
+27/11/2024,C076,Mukesh Shamli,Suits,Cotton,Stiched,1,1900,1650,250
+27/11/2024,C076,Mukesh Shamli,Suits,Cotton,Stiched,1,2000,1750,250
+27/11/2024,C076,Mukesh Shamli,Suits,Cotton,Unstiched,1,1900,1650,250
+27/11/2024,C076,Mukesh Shamli,Suits,Cotton,Unstiched,1,1000,800,200
+27/11/2024,C076,Mukesh Shamli,Suits,Cotton,Stiched,1,1800,1550,250
+01/12/2024,C077,Adchini Antus Taiji,Suits,Cotton,Stiched,1,1100,800,300
+01/12/2024,C077,Adchini Antus Taiji,Suits,Cotton,Stiched,1,650,400,250
+10/12/2024,C074,Sunita Sejwal,Suits,Cotton,Stiched,1,1550,1100,450
+07/01/2025,C078,Juli,Suits,Cotton,Stiched,1,1100,850,250
+07/01/2025,C078,Juli,Suits,Cotton,Stiched,1,550,350,200
+07/01/2025,C078,Juli,Suits,Cotton,Stiched,1,700,500,200
+15/01/2025,C079,Babli,Suits,Cotton,Unstiched,1,4050,3800,250
+15/01/2025,C079,Babli,Sarees,Cotton,Stiched,1,1500,1200,300
+15/01/2025,C079,Babli,Suits,Cotton,Stiched,1,1250,1000,250
+15/01/2025,C079,Babli,Suits,Cotton,Stiched,1,2250,2000,250
+15/01/2025,C079,Babli,Suits,Cotton,Stiched,1,1350,1000,350
+15/01/2025,C079,Babli,Suits,Brocade,Stiched,1,4200,3800,400
+20/01/2025,C080,Sheetal,Suits,Linen,Unstiched,11,15400,12900,2500
+20/01/2025,C080,Sheetal,Suits,Linen,Stiched,1,1500,1250,250
+20/01/2025,C080,Sheetal,Suits,Muslin,Stiched,2,3100,2850,250
+20/01/2025,C080,Sheetal,Suits,Cotton,Stiched,3,4050,3800,250
+20/01/2025,C080,Sheetal,Suits,Cotton,Stiched,2,2400,2150,250
+20/01/2025,C080,Sheetal,Suits,Cotton,Stiched,1,1500,1200,300
+20/01/2025,C080,Sheetal,Suits,Cotton,Stiched,2,3800,3000,800
+28/01/2025,C081,Chetna,Sarees,Cotton,Stiched,1,2650,2400,250
+28/01/2025,C081,Chetna,Coord Sets,Cotton,Stiched,1,1250,1000,250
+28/01/2025,C081,Chetna,Kaftan Sets,Cotton,Stiched,1,2550,2300,250
+06/02/2025,C074,Sunita Sejwal,Sarees,Cotton,Stiched,1,2250,1950,300
+06/02/2025,C074,Sunita Sejwal,Sarees,Cotton,Stiched,1,1200,950,250
+15/01/2025,C082,Manju VK,Sarees,Cotton,Stiched,1,2250,2000,250
+15/01/2025,C082,Manju VK,Suits,Cotton,Stiched,1,3700,3450,250
+15/01/2025,C082,Manju VK,Suits,Velvet,Stiched,1,4500,4250,250
+20/02/2025,C083,Shashi Ji,Suits,Chanderi,Stiched,1,2200,1950,250
+20/02/2025,C083,Shashi Ji,Suits,Cotton,Stiched,1,1650,1350,300
+20/02/2025,C083,Shashi Ji,Suits,Linen,Stiched,1,1350,1100,250
+25/02/2025,C084,Uma Shekhawat,Suits,Linen,Stiched,1,1650,1200,450
+25/02/2025,C084,Uma Shekhawat,Suits,Maheswari,Stiched,1,2350,2000,350
+05/03/2025,C076,Mukesh Shamli,Suits,Cotton,Stiched,2,2400,1950,450
+10/03/2025,C085,Neeru Khatri,Sarees,Khadi Cotton,Stiched,1,1675,1425,250
+12/03/2025,C086,Shweta VK,Sarees,Cotton,Stiched,1,1500,1200,300
+14/03/2025,C087,Urmila PRS,Suits,Linen,Stiched,1,1600,1350,250
+14/03/2025,C087,Urmila PRS,Suits,Kota,Stiched,1,1600,1350,250
+16/03/2025,C088,VK Suman,Suits,Linen,Stiched,1,1900,1650,250
+18/03/2025,C089,Pallavi,Suits,Cotton,Stiched,1,2600,2350,250
+18/03/2025,C089,Pallavi,Suits,Cotton,Stiched,1,3000,2600,400
+18/03/2025,C089,Pallavi,Suits,Cotton,Stiched,1,3000,2750,250
+18/03/2025,C089,Pallavi,Suits,Cotton,Stiched,1,500,300,200
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,1200,950,250
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,700,400,300
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,700,450,250
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,1000,750,250
+06/04/2025,C080,Sheetal,Suits,Linen,Stiched,5,5500,4050,1450
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,900,650,250
+06/04/2025,C080,Sheetal,Suits,Velvet,Stiched,1,4200,3950,250
+06/04/2025,C080,Sheetal,Suits,Cotton,Stiched,1,2900,2650,250
+06/04/2025,C080,Sheetal,Suits,Silk,Stiched,1,2550,2300,250
+08/04/2025,C090,Priya,Suits,Cotton,Stiched,1,1750,1500,250
+08/04/2025,C090,Priya,Suits,Kota,Unstiched,1,1500,1250,250
+10/04/2025,C091,Chachi,Cord Sets,Cotton,Stiched,1,1200,900,300
+10/04/2025,C091,Chachi,Short Kurtis,Cotton,Stiched,2,1000,600,400
+13/04/2025,C088,Suman VK,Suits,Cotton,Stiched,1,1250,1000,250
+13/04/2025,C088,Suman VK,Suits,Muslin,Stiched,1,1800,1550,250
+15/04/2025,C081,Chetna,Suits,Linen,Stiched,1,1000,750,250
+15/04/2025,C081,Chetna,Suits,Cotton,Stiched,1,1500,1250,250
+15/04/2025,C081,Chetna,Suits,Cotton,Stiched,1,1800,1550,250
+15/04/2025,C081,Chetna,Suits,Cotton,Stiched,1,2600,2350,250
+19/04/2025,C092,Tabbasum,Suits,Cotton,Unstiched,1,1900,1650,250
+22/04/2025,C093,Shilpa Khanner,Pants,Cotton,Stiched,1,1000,750,250
+22/04/2025,C093,Shilpa Khanner,Suits,Maheswari,Unstiched,1,2700,2300,400
+22/04/2025,C093,Shilpa Khanner,Suits,Cotton,Unstiched,1,1380,1130,250
+22/04/2025,C093,Shilpa Khanner,Suits,Cotton,Stiched,1,1800,1550,250
+22/04/2025,C093,Shilpa Khanner,Suits,Cotton,Stiched,1,1450,1150,300
+22/04/2025,C093,Shilpa Khanner,Suits,Chiffon,Stiched,1,1250,1000,250
+22/04/2025,C093,Shilpa Khanner,Suits,Chiffon,Unstiched,1,2000,1750,250
+26/04/2025,C094,Shweta Dwarka,Gowns,Cotton,Stiched,1,2350,2100,250
+26/04/2025,C094,Shweta Dwarka,Suits,Cotton,Stiched,1,1500,1250,250
+28/04/2025,C095,Manju Malge,Suits,Linen,Stiched,1,1100,850,250
+28/04/2025,C095,Manju Malge,Suits,Cotton,Stiched,1,800,500,300
+28/04/2025,C095,Manju Malge,Kurtis,Cotton,Stiched,1,550,350,200
+28/04/2025,C095,Aunty,Suits,Silk,Stiched,1,1900,1650,250
+28/04/2025,C095,Aunty,Suits,Cotton,Unstiched,1,2000,1750,250
+29/04/2025,C096,Sushila Sehrawat,Cord Sets,Cotton,Stiched,1,750,500,250
+29/04/2025,C096,Sushila Sehrawat,Suits,Cotton,Unstiched,1,2000,1750,250
+29/04/2025,C096,Sushila Sehrawat,Suits,Cotton,Unstiched,1,1200,950,250
+29/04/2025,C096,Sushila Sehrawat,Suits,Cotton,Unstiched,1,1290,1040,250
+29/04/2025,C096,Sushila Sehrawat,Suits,Cotton,Unstiched,1,2000,1750,250
+29/04/2025,C096,Sushila Sehrawat,Short Kurtis,Cotton,Stiched,1,700,450,250
+10/01/2026,C097,Kavita DDA Adchini,Skirt Suits,Cotton,Stiched,1,3001,2701,300
+13/03/2026,C098,Sunita Dwarka Delhi,Kurtis,Cotton,Stiched,3,1500,750,750
+13/03/2026,C098,Sunita Dwarka Delhi,Kurtis,Cotton,Stiched,1,400,200,200
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Unstiched,2,1700,1200,500
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Unstiched,1,850,600,250
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Unstiched,2,2000,1500,500
+13/03/2026,C098,Sunita Dwarka Delhi,Gowns,Cotton,Stiched,2,2500,1900,600
+13/03/2026,C098,Sunita Dwarka Delhi,Jackets,Cotton,Stiched,2,2200,1600,600
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Stiched,2,1400,900,500
+13/03/2026,C098,Sunita Dwarka Delhi,Cord Sets,Cotton,Stiched,4,3400,2400,1000
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Stiched,1,850,600,250
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Stiched,1,1250,1000,250
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Unstiched,2,2500,2000,500
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Mul Chanderi,Stiched,1,1700,1450,250
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Cotton,Stiched,1,1000,750,250
+13/03/2026,C098,Sunita Dwarka Delhi,Suits,Mul Chanderi,Stiched,1,1800,1550,250
+16/03/2026,C099,Sahana DM Mangalore,Suits,Cotton,Stiched,1,1500,1250,250
+16/03/2026,C099,Sahana DM Mangalore,Suits,Cotton,Stiched,1,1450,1200,250
+16/03/2026,C100,Sonmi 2nd Floor,Suits,Cotton,Stiched,1,1550,1300,250
+16/03/2026,C100,Sonmi 2nd Floor,Suits,Cotton,Stiched,1,1400,1150,250
+16/03/2026,C101,Dr Nangal Deva,Sarees,Linen,Stiched,1,1250,1000,250
+16/03/2026,C101,Dr Nangal Deva,Sarees,Chanderi,Stiched,1,2500,2200,300
+02/03/2026,C102,Chandra Kanta Bangalore,Suits,Cotton,Stiched,1,1195,945,250
+02/03/2026,C102,Chandra Kanta Bangalore,Suits,Cotton,Stiched,1,1899,1599,300
+03/03/2026,C103,Rekha Shisodh,Suits,Cotton,Stiched,1,999,749,250
+03/03/2026,C103,Rekha Shisodh,Suits,Cotton,Stiched,1,999,749,250
+03/03/2026,C103,Rekha Shisodh,Suits,Cotton,Stiched,1,1595,1295,300
+06/04/2026,C104,P Songei Jaipur,Suits,Kota Cotton,Stiched,1,999,749,250
+06/04/2026,C104,P Songei Jaipur,Suits,Khadi Cotton,Stiched,1,999,749,250
+08/04/2026,C105,Chitra VK,Anarkali Sets,Cotton,Stiched,1,1350,1100,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,12,17400,14400,3000
+09/04/2026,C106,Savita Dwarka,Short Kurtis,Cotton,Stiched,2,1000,600,400
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,1100,850,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Unstiched,1,1400,1150,250
+09/04/2026,C106,Savita Dwarka,Suits,Muslin,Stiched,1,1250,1000,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,1000,750,250
+09/04/2026,C106,Savita Dwarka,Anarkali,Cotton,Stiched,1,1800,1550,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,1600,1350,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,1700,1450,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Unstiched,1,1100,850,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,1250,1000,250
+09/04/2026,C106,Savita Dwarka,Suits,Cotton,Stiched,1,700,500,200
+01/04/2026,C105,Chitra VK,Suits,Cotton,Stiched,1,3000,2700,300
+01/04/2026,C105,Chitra VK,Suits,Cotton,Stiched,1,2484,2184,300
+10/04/2026,C105,Chitra VK,Suits,Maheswari,Stiched,1,3000,2700,300
+10/04/2026,C105,Chitra VK,Anarkali,Cotton,Stiched,1,2500,2200,300
+11/04/2026,C107,Bindiya Ghaziabad,Suits,Cotton,Stiched,2,2100,1600,500
+11/04/2026,C107,Bindiya Ghaziabad,Anarkali,Cotton,Stiched,1,1250,1000,250
+11/04/2026,C107,Bindiya Ghaziabad,Suits,Kota Cotton,Stiched,8,9200,7200,2000
+11/04/2026,C107,Bindiya Ghaziabad,Suits,Cotton,Stiched,1,1500,1250,250
+11/04/2026,C107,Bindiya Ghaziabad,Tunic,Cotton,Stiched,1,600,400,200
+11/04/2026,C107,Bindiya Ghaziabad,Anarkali,Cotton,Stiched,1,1000,750,250
+12/04/2026,C108,Deepshikha Aggarwal,Anarkali,Cotton,Stiched,1,1795,1495,300
+12/04/2026,C109,Gursheen Kaur,Gowns,Cotton,Stiched,1,1495,1245,250
+12/04/2026,C110,Smitha Muddipatta,Anarkali,Cotton,Stiched,1,1795,1495,300
+12/04/2026,C110,Smitha Muddipatta,Suits,Cotton,Stiched,1,1800,1550,250
+12/04/2026,C111,Swultramit,Suits,Cotton,Stiched,3,2997,2247,750
+13/04/2026,C112,Uma Devi Wholesale,Cord Sets,Cotton,Stiched,2,2000,1500,500
+13/04/2026,C112,Uma Devi Wholesale,Anarkali,Cotton,Stiched,1,1000,750,250
+13/04/2026,C112,Uma Devi Wholesale,Suits,Kota Cotton,Stiched,8,9200,7200,2000
+13/04/2026,C112,Uma Devi Wholesale,Suits,Cotton,Stiched,1,1500,1250,250
+13/04/2026,C112,Uma Devi Wholesale,Tunic,Cotton,Stiched,1,600,400,200
+13/04/2026,C112,Uma Devi Wholesale,Anarkali,Cotton,Stiched,1,1000,750,250
+13/04/2026,C112,Uma Devi Wholesale,Suits,Cotton,Stiched,1,800,600,200
+13/04/2026,C113,Puja Biswas WB,Anarkali,Cotton,Stiched,1,1495,1245,250
+14/04/2026,C114,Priyanka Mogha,Suits,Cotton,Stiched,1,1495,1245,250
+14/04/2026,C114,Priyanka Mogha,Kaftan,Cotton,Stiched,1,2600,2300,300
+15/04/2026,C115,Babita Sharma Shimla,Anarkali,Lucknowi,Stiched,1,2400,2100,300
+15/04/2026,C116,Rachna Rudrapur,Suits,Cotton,Stiched,1,1395,1145,250
+15/04/2026,C117,Deepika Sharma VK,Suits,Kota Cotton,Stiched,1,1800,1550,250
+17/04/2026,C118,Shivesh Tripathi,Anarkali,Cotton,Stiched,1,1495,1245,250
+19/04/2026,C119,K Padmamani Hyderabad,Suits,Cotton,Stiched,1,1395,1145,250
+23/04/2026,C120,Anjali IIT,Cord Sets,Cotton,Stiched,1,1800,1550,250
+23/04/2026,C120,Anjali IIT,Cord Sets,Cotton,Stiched,1,1700,1450,250
+23/04/2026,C120,Anjali IIT,Cord Sets,Cotton,Stiched,1,1100,850,250
+24/04/2026,C121,Kanudayi Mangal Gujarat,Suits,Cotton,Stiched,1,2400,2100,300
+29/04/2026,C112,Uma Devi Wholesale,Suits,Cotton,Stiched,4,7200,6200,1000
+29/04/2026,C112,Uma Devi Wholesale,Suits,Cotton,Stiched,1,1250,1000,250
+29/04/2026,C112,Uma Devi Wholesale,Suits,Kota Cotton,Stiched,3,3600,2850,750
+29/04/2026,C112,Uma Devi Wholesale,Suits,Cotton,Stiched,1,1800,1550,250
+29/04/2026,C112,Uma Devi Wholesale,Anarkali,Cotton,Stiched,1,1000,750,250
+01/05/2026,C122,Priya VK,Anarkali,Cotton,Stiched,1,1750,1500,250
+02/05/2026,C102,Chandra Kanta Bangalore,Suits,Cotton,Stiched,1,1895,1595,300
+02/05/2026,C123,Shashi Ji VK,Anarkali,Cotton,Stiched,1,1800,1550,250
+02/05/2026,C123,Shashi Ji VK,Anarkali,Cotton,Stiched,1,1800,1550,250
+02/05/2026,C123,Shashi Ji VK,Suits,Cotton,Stiched,1,3000,2700,300
+02/05/2026,C123,Shashi Ji VK,Suits,Cotton,Stiched,1,1100,850,250
+02/05/2026,C123,Shashi Ji VK,Suits,Cotton,Stiched,1,1800,1550,250
+03/05/2026,C124,Shalini VK Bangalore,Suits,Cotton,Stiched,1,800,600,200
+03/05/2026,C124,Shalini VK Bangalore,Suits,Cotton,Stiched,1,1500,1250,250
+03/05/2026,C124,Shalini VK Bangalore,Suits,Muslin,Stiched,1,2500,2200,300
+03/05/2026,C124,Shalini VK Bangalore,Suits,Cotton,Stiched,1,1700,1450,250
+03/05/2026,C124,Shalini VK Bangalore,Suits,Cotton,Stiched,2,3400,2900,500
