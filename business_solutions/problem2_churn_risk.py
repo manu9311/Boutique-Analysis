@@ -3,8 +3,6 @@ from datetime import datetime
 
 df = pd.read_csv('/Users/manurana/Documents/boutique_analysis/Purchases - Sheet1.csv')
 df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
-
-# ── STEP 1: Get each customer's last purchase date ────────
 today = pd.Timestamp.today()
 
 customer_stats = df.groupby('Names').agg(
@@ -14,10 +12,8 @@ customer_stats = df.groupby('Names').agg(
     avg_order_value=('Selling Price', 'mean')
 ).reset_index()
 
-# ── STEP 2: Days since last purchase ─────────────────────
 customer_stats['Days Since Last Purchase'] = (today - customer_stats['last_purchase']).dt.days
 
-# ── STEP 2B: Favourite category per customer ──────────────
 top_category = df.groupby('Names').apply(
     lambda x: x.groupby('Category')['Selling Price'].sum().idxmax()
 ).reset_index()
@@ -25,7 +21,6 @@ top_category.columns = ['Names', 'Favourite Category']
 
 customer_stats = customer_stats.merge(top_category, on='Names')
 
-# ── STEP 3: Average gap between purchases per customer ────
 def avg_gap(dates):
     sorted_dates = sorted(dates)
     if len(sorted_dates) < 2:
@@ -38,7 +33,7 @@ gaps.columns = ['Names', 'Avg Days Between Purchases']
 
 customer_stats = customer_stats.merge(gaps, on='Names')
 
-# ── STEP 4: Flag churn risk ───────────────────────────────
+
 def churn_flag(row):
     days = row['Days Since Last Purchase']
     if days > 365:
@@ -52,7 +47,6 @@ def churn_flag(row):
 
 customer_stats['Status'] = customer_stats.apply(churn_flag, axis=1)
 
-# ── STEP 5: Revenue at risk ───────────────────────────────
 at_risk = customer_stats[customer_stats['Status'].isin(['🟠 AT RISK', '🔴 LOST'])]
 revenue_at_risk = at_risk['avg_order_value'].sum()
 

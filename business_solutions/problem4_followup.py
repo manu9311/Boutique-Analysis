@@ -5,7 +5,6 @@ from datetime import datetime
 df = pd.read_csv('/Users/manurana/Documents/boutique_analysis/Purchases - Sheet1.csv')
 df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
 
-# ── STEP 1: Build customer purchase history ───────────────
 today = pd.Timestamp.today()
 
 customer_stats = df.groupby('Names').agg(
@@ -18,7 +17,6 @@ customer_stats = df.groupby('Names').agg(
 
 customer_stats['Days Since Last Purchase'] = (today - customer_stats['last_purchase']).dt.days
 
-# ── STEP 2: What does each customer usually buy ───────────
 top_category = df.groupby('Names').apply(
     lambda x: x.groupby('Category')['Selling Price'].sum().idxmax()
 ).reset_index()
@@ -26,7 +24,6 @@ top_category.columns = ['Names', 'Favourite Category']
 
 customer_stats = customer_stats.merge(top_category, on='Names')
 
-# ── STEP 3: Average gap between purchases ────────────────
 def avg_gap(dates):
     sorted_dates = sorted(dates)
     if len(sorted_dates) < 2:
@@ -38,8 +35,6 @@ def avg_gap(dates):
 gaps = df.groupby('Names')['Date'].apply(avg_gap).reset_index()
 gaps.columns = ['Names', 'Avg Days Between Purchases']
 customer_stats = customer_stats.merge(gaps, on='Names')
-
-# ── STEP 4: Should we message them today? ────────────────
 def followup_status(row):
     if row['total_orders'] == 1:
         if row['Days Since Last Purchase'] > 30:
@@ -59,11 +54,7 @@ def followup_status(row):
         return f'🟢 Not yet — message in {days_left} days'
 
 customer_stats['Follow Up Status'] = customer_stats.apply(followup_status, axis=1)
-
-# ── STEP 5: Potential revenue if they buy again ───────────
 customer_stats['Potential Revenue'] = customer_stats['avg_order_value']
-
-# ── STEP 6: Sort by priority ──────────────────────────────
 priority = customer_stats[
     customer_stats['Follow Up Status'].str.contains('OVERDUE|DUE|MESSAGE NOW', na=False)
 ].sort_values('total_spent', ascending=False)

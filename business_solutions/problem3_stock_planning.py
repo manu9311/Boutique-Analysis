@@ -5,13 +5,11 @@ from datetime import datetime
 df = pd.read_csv('/Users/manurana/Documents/boutique_analysis/Purchases - Sheet1.csv')
 df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
 
-# ── STEP 1: Monthly revenue ───────────────────────────────
 df['Month'] = df['Date'].dt.to_period('M')
 monthly = df.groupby('Month')['Selling Price'].sum().reset_index()
 monthly.columns = ['Month', 'Revenue']
 monthly['Month_Num'] = range(len(monthly))
 
-# ── STEP 2: Simple forecasting (linear trend) ────────────
 from numpy.polynomial.polynomial import polyfit
 
 x = monthly['Month_Num'].values
@@ -24,19 +22,15 @@ for i in range(1, 4):
     predicted = coefs[0] + coefs[1] * (last_month_num + i)
     next_3.append(predicted)
 
-# ── STEP 3: Category split from real data ────────────────
 category_revenue = df.groupby('Category')['Selling Price'].sum()
 total_revenue = category_revenue.sum()
 category_pct = (category_revenue / total_revenue * 100).round(1)
 
-# ── STEP 4: Top categories to stock ──────────────────────
 top_categories = category_pct.sort_values(ascending=False).head(5)
 
-# ── STEP 5: Monthly seasonality ──────────────────────────
 df['MonthName'] = df['Date'].dt.strftime('%B')
 seasonality = df.groupby('MonthName')['Selling Price'].sum().sort_values(ascending=False)
 
-# ── STEP 6: Stock budget recommendation ──────────────────
 avg_margin = ((df['Selling Price'] - df['Cost Price']) / df['Selling Price']).mean()
 avg_predicted = np.mean(next_3)
 recommended_stock_budget = avg_predicted * (1 - avg_margin)
