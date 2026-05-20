@@ -1,39 +1,32 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, r2_score
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import r2_score
+import matplotlib.pyplot as plt
 
-df = pd.read_csv('Purchases - Sheet1.csv')
-df['Date'] = pd.to_datetime(df['Date'], dayfirst=True)
+df = pd.read_csv("Purchases - Sheet1.csv")
+df['Date'] = pd.to_datetime(df['Date'], dayfirst = True)
 df['YearMonth'] = df['Date'].dt.to_period('M')
-monthly_df = df.groupby('YearMonth')['Selling Price'].sum().reset_index()
-monthly_df.columns = ['Month', 'Revenue']
-monthly_df['MonthNumber'] = range(1, len(monthly_df) + 1)
 
-print("Monthly revenue data:")
+monthly_df = df.groupby('YearMonth')['Selling Price'].sum().reset_index()
 print(monthly_df)
 
-# X = month number (1, 2, 3...)
-# y = revenue that month
+monthly_df['MonthNumber'] = range(1, len(monthly_df) + 1)
 X = monthly_df[['MonthNumber']]
-y = monthly_df['Revenue']
+y = monthly_df['Selling Price']
+print(X)
+print(y)
 
 model = LinearRegression()
 model.fit(X, y)
 
-# We have months 1-15, so prediction for 16, 17, 18
-future_months = pd.DataFrame({'MonthNumber': [16, 17, 18]})
-future_predictions = model.predict(future_months)
+future_pred = pd.DataFrame({'MonthNumber': [16,17,18]})
+predictions = model.predict(future_pred)
+print(f"Jun 2026: ₹{predictions[0]:,.0f}")
+print(f"Jul 2026: ₹{predictions[1]:,.0f}")
+print(f"Aug 2026: ₹{predictions[2]:,.0f}")
 
-print("Forecast for next 3 months:")
-print(f"Month 16 (Jun 2026): ₹{future_predictions[0]:,.0f}")
-print(f"Month 17 (Jul 2026): ₹{future_predictions[1]:,.0f}")
-print(f"Month 18 (Aug 2026): ₹{future_predictions[2]:,.0f}")
-
-y_pred = model.predict(X)
-print(f"\nR2 Score: {r2_score(y, y_pred):.2f}")
-print(f"MAE: ₹{mean_absolute_error(y, y_pred):,.0f}") 
 # For own understanding:-
 # n KNN and Regression we split because we wanted to test accuracy — hide some data, see if the model predicts it correctly.
 # For forecasting, we're not testing accuracy on past data. We're predicting future months that don't exist yet in our data — June, July, August 2026. There's no "correct answer" to compare against.
@@ -42,17 +35,18 @@ print(f"MAE: ₹{mean_absolute_error(y, y_pred):,.0f}")
 
 plt.figure(figsize=(12, 6))
 
-plt.plot(monthly_df['MonthNumber'], monthly_df['Revenue'], 
+plt.plot(monthly_df['MonthNumber'], monthly_df['Selling Price'], 
          marker='o', color='blue', label='Actual Revenue', linewidth=2)
 
-plt.plot(monthly_df['MonthNumber'], y_pred,
+plt.plot(monthly_df['MonthNumber'], model.predict(X),
          color='green', linestyle='--', label='Trend Line', linewidth=2)
+
 plt.plot([15, 16, 17, 18], 
-         [monthly_df['Revenue'].iloc[-1]] + list(future_predictions),
+         [monthly_df['Selling Price'].iloc[-1]] + list(predictions),
          marker='o', color='red', linestyle='--', 
          label='Forecast', linewidth=2)
 
-all_months = list(monthly_df['Month'].astype(str)) + ['Jun 2026', 'Jul 2026', 'Aug 2026']
+all_months = list(monthly_df['YearMonth'].astype(str)) + ['Jun 2026', 'Jul 2026', 'Aug 2026']
 plt.xticks(range(1, 19), all_months, rotation=45, ha='right')
 
 plt.title('Monthly Revenue — Actual vs Forecast')
@@ -61,4 +55,5 @@ plt.ylabel('Revenue (₹)')
 plt.legend()
 plt.tight_layout()
 plt.savefig('chart_forecast.png', dpi=150)
-print("Forecast chart saved!")
+plt.close()
+print("Chart saved!")
